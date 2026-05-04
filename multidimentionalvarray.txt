@@ -1,0 +1,10 @@
+CREATE TYPE object_type_name AS OBJECT (
+
+attribute_name DATATYPE(SIZE),
+
+attribute_name DATATYPE(SIZE),
+
+attribute_name DATATYPE(SIZE));
+CREATE TYPE varray_type_name AS
+
+VARRAY(size) OF object_type_name;

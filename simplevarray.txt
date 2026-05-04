@@ -1,0 +1,7 @@
+CREATE TYPE varray_type_name AS
+
+VARRAY(size) OF datatype;
+
+CREATE TYPE name_varray_type AS
+
+VARRAY(10) OF varchar(20);

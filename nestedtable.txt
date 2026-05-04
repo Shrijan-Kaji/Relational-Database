@@ -1,0 +1,20 @@
+CREATE TYPE object_type_name AS OBJECT(
+
+attribute_name DATATYPE(SIZE),
+
+attribute_name DATATYPE(SIZE),
+
+attribute_name DATATYPE(SIZE));
+
+
+CREATE TYPE object_table_type_name
+
+AS TABLE OF object_type_name;
+
+CREATE TABLE relational_table_name(
+
+column_name DATATYPE(SIZE),
+
+column_name DATATYPE(SIZE),
+
+column_name object_table_type_name)
