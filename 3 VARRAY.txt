@@ -1,0 +1,4 @@
+--Varray
+
+CREATE TYPE varray_type_locations AS VARRAY(10) OF VARCHAR2(10);
+/

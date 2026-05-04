@@ -1,0 +1,19 @@
+CREATE OR REPLACE TYPE object_type_caste AS OBJECT(
+    bramhin_type VARCHAR2(10),
+    chettri_type VARCHAR2(10),
+    baishya_type VARCHAR2(10),
+    engineer_type VARCHAR2(10)
+);
+/
+
+CREATE TABLE obj_castes OF object_type_caste;
+/
+
+
+CREATE TABLE person(
+    name VARCHAR2(8),
+    address VARCHAR2(10),
+    symbol_number NUMBER(10),
+    caste_ref REF object_type_caste SCOPE IS obj_castes
+);
+/

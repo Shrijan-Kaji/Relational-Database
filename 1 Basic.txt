@@ -1,0 +1,18 @@
+CREATE OR REPLACE TYPE object_type_addresses AS OBJECT(
+    name VARCHAR2(10),
+    street VARCHAR2(20),
+    city VARCHAR2(20),
+    country VARCHAR2(15)
+);
+/
+
+CREATE TABLE addresses_table OF object_type_addresses;
+/
+
+CREATE TABLE infos(
+    f_name VARCHAR2(10),
+    m_name VARCHAR2(10),
+    l_name VARCHAR2(10),
+    address object_type_addresses
+);
+/

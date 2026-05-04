@@ -1,0 +1,9 @@
+--Multi dimnional varrays
+
+CREATE TYPE varray_type_countries AS OBJECT(
+    country_name VARCHAR2(20)
+);
+/
+
+CREATE TYPE varray_type_names AS VARRAY(50) OF varray_type_countries;
+/
