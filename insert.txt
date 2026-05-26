@@ -1,0 +1,37 @@
+INSERT INTO table_name(column_name,object_column_name)
+VALUES(value,object_type_name('VALUE','VALUE','VALUE'));
+
+INSERT INTO students (students_d,address)
+SELECT 1235,REF(a)
+FROM addresses a
+WHERE street='67 KENSINGTON AVENUE';
+
+INSERT INTO products(products(product_id,available_size)
+VALUES(100001,size_varray_type('SMALL','MEDIUM','LARGE'));,
+ 
+INSERT TINTO sites(site_id,classroom)
+VALUES(1,
+     classroom_varray_type(
+          classroom_type('LH401',50,'LECTURE ROOM'),
+          classroom_type('LH402',24,'SEMINAR ROOM'),
+          classroom_type('LH101',10,'STAFF OFFICE'),
+WHERE site_id=1;
+
+INSERT INTO table_name(column_name,column_name)
+VALUES(VALUE,
+       table_type_name(
+         type_name(VALUE,VALUE,'VALUE'),
+         type_name(VALUE,VALUE,'VALUE'),
+         type_name(VALUE,VALUE,'VALUE'),
+         );
+INSERT INTO invoices
+VALUES(10007,30,'01-OCT-2021',
+    invoice_item_table_type(
+SELECT alias.column.atttribute FROM tablename alias;
+SELECT s.address.street, s.address.city FROM sites s;
+SELECT columnname,DEREF(reference_column)
+FROM tablename;
+Select instructor_id,DEREF(address)
+FROM instructors;
+         
+

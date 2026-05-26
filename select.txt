@@ -1,0 +1,21 @@
+SELECT balance 
+FROM staff
+WHERE balance=150;
+SELECT AVG(balance) AS average_balance
+FROM staff;
+SELECT MEAN(balance) dept
+FROM staff
+GROUP BY dept;
+SELECT AVG(balance) dept
+FROM staff
+GROUP BY dept;
+SELECT MAX(balance) dept
+FROM staff
+GROUP BY dept;
+SELECT COUNT(balance) dept
+FROM staff
+GROUP BY dept;
+SELECT SUM(balance),AVG(balance),dept
+FROM staff
+GROUP BY dept
+HAVING AVG(balance)<100;

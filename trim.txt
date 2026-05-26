@@ -1,0 +1,9 @@
+SELECT TRIM(''FROM firstname)'
+TRIM(''FROM surname)
+FROM staff;
+
+SELECT INSTR('CORPORATE FLOOR','OR',3,2)FROM
+DUAL;
+
+SELECT SUBSTR(firstname,3,LENGTH(firstname))
+FROM staff;
